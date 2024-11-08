@@ -1,0 +1,39 @@
+/LiveDocs
+├── /backend                      # Django Backend
+│   ├── /docs                      # App for document handling
+│   │   ├── /migrations            # DB migrations
+│   │   ├── __init__.py
+│   │   ├── admin.py               # Django Admin setup
+│   │   ├── apps.py                # App configuration
+│   │   ├── models.py              # Database models (documents)
+│   │   ├── serializers.py         # Serializers for the Document API
+│   │   ├── tests.py               # Unit tests
+│   │   ├── views.py               # Views for API endpoints
+│   │   └── urls.py                # API route definitions
+│   ├── /static                    # Static files (CSS, JS, etc.)
+│   ├── /templates                 # HTML templates for Django admin or other purposes
+│   ├── /settings.py               # Main settings for the Django app
+│   ├── /urls.py                   # Main URL configurations for the backend
+│   └── manage.py                  # Manage commands for Django
+│
+├── /frontend                     # Next.js Frontend
+│   ├── /components                # Reusable React components
+│   │   ├── DocList.js             # Component to display list of documents
+│   │   ├── DocEditor.js           # Component for editing documents in real-time
+│   │   └── Header.js              # Main header component
+│   ├── /pages                     # Pages of the app
+│   │   ├── /index.js              # Homepage
+│   │   ├── /docs/[id].js          # Document view page
+│   │   └── /api/                  # API routes (for Next.js server-side)
+│   ├── /public                    # Public assets (images, fonts, etc.)
+│   │   └── logo.png               # Your app's logo
+│   ├── /styles                     # Global CSS or Tailwind CSS setup
+│   │   ├── globals.css            # Global styles
+│   │   └── tailwind.config.js     # Tailwind CSS configuration
+│   ├── .env                       # Environment variables (for API URL, etc.)
+│   ├── package.json               # Project metadata and dependencies
+│   ├── next.config.js             # Next.js configuration (for API routing, etc.)
+│   └── README.md                  # Documentation for the frontend
+│
+├── .gitignore                     # Git ignore file (for node_modules, venv, etc.)
+└── README.md                      # Project-level documentation
